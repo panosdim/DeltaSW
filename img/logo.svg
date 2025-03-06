@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <desc>Created with Fabric.js 5.2.4</desc>
+  <g transform="matrix(1 0 0 1 540 540)" id="434d5c95-372c-46c7-b655-06bfa2e0878c">
+    <rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke" x="-540" y="-540" rx="0" ry="0" width="1080" height="1080"/>
+  </g>
+  <g transform="matrix(1 0 0 1 540 540)" id="524f9ca5-ad4b-4347-b7a7-6f3d53bf452e"/>
+  <g transform="matrix(14.42693, 0, 0, 16.53804, 540, 540)" id="2dce12c8-0d90-41d3-935e-14b94a7b1ed2">
+    <polygon style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" points="-37.43,32.41 0,-32.41 37.43,32.41 "/>
+  </g>
+</svg>

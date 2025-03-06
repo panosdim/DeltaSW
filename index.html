@@ -1,97 +1,280 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="h-100" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeltaSW - Software Development Solutions</title>
-    <link rel="stylesheet" href="output.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="description" content="Building Tomorrow's Solutions Today">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
+  <meta name="HandheldFriendly" content="true">
+  <title>DeltaSW - Building Tomorrow's Solutions Today</title>
+  <link rel="stylesheet" href="css/theme.min.css">
+
+  <style>
+    /* inter-300 - latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: local(''),
+        url('./fonts/inter-v12-latin-300.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('./fonts/inter-v12-latin-300.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: local(''),
+        url('./fonts/inter-v12-latin-500.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('./fonts/inter-v12-latin-500.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: local(''),
+        url('./fonts/inter-v12-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('./fonts/inter-v12-latin-700.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+  </style>
+
 </head>
 
-<body class="font-sans leading-relaxed">
-    <!-- Header -->
-    <header class="bg-blue-600 text-white text-center py-12">
-        <h1 class="text-4xl font-bold">DeltaSW</h1>
-        <p class="mt-2 text-lg">Building Tomorrow's Solutions Today</p>
-    </header>
+<body data-bs-spy="scroll" data-bs-target="#navScroll">
 
-    <!-- Navigation -->
-    <nav class="bg-gray-800 text-white py-4">
-        <div class="max-w-4xl mx-auto flex justify-center space-x-6">
-            <a href="#home" class="hover:text-blue-300">Home</a>
-            <a href="#about" class="hover:text-blue-300">About Us</a>
-            <a href="#services" class="hover:text-blue-300">Services</a>
-            <a href="#portfolio" class="hover:text-blue-300">Portfolio</a>
-            <a href="#contact" class="hover:text-blue-300">Contact</a>
-        </div>
-    </nav>
+  <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
+    <div class="container">
+      <a class="navbar-brand pe-4 fs-4" href="/">
+        <img src="img/logo.svg" width="32" height="32" alt="DeltaSW Logo">
+        <span class="ms-1 fw-bolder">DeltaSW</span>
+      </a>
 
-    <!-- Home Section -->
-    <section id="home" class="py-12 max-w-3xl mx-auto px-4">
-        <h2 class="text-3xl font-semibold text-gray-800">Welcome to DeltaSW</h2>
-        <p class="mt-4 text-gray-600">At DeltaSW, we specialize in crafting innovative Android applications, dynamic web
-            solutions, and custom software tailored to your needs. Let’s bring your ideas to life with cutting-edge
-            technology and expertise.</p>
-    </section>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#services" aria-label="Brings you to the frontpage">
+              Services
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutus">
+              About us
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">
+              Portfolio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-us">
+              Contact Us
+            </a>
+          </li>
 
-    <!-- About Us Section -->
-    <section id="about" class="py-12 max-w-3xl mx-auto px-4 bg-gray-100">
-        <h2 class="text-3xl font-semibold text-gray-800">About Us</h2>
-        <p class="mt-4 text-gray-600">DeltaSW is a passionate team of developers and designers dedicated to delivering
-            high-quality software solutions. With years of experience in the industry, we pride ourselves on creating
-            reliable, scalable, and user-friendly products that empower businesses and individuals alike.</p>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-12 max-w-3xl mx-auto px-4">
-        <h2 class="text-3xl font-semibold text-gray-800">Our Services</h2>
-        <div class="mt-6 space-y-6">
-            <div>
-                <h3 class="text-xl font-medium text-gray-700">Android App Development</h3>
-                <p class="mt-2 text-gray-600">We create powerful, intuitive mobile apps for Android devices, designed to
-                    engage users and meet your business goals.</p>
-            </div>
-            <div>
-                <h3 class="text-xl font-medium text-gray-700">Web Application Development</h3>
-                <p class="mt-2 text-gray-600">From sleek front-end designs to robust back-end systems, we build web
-                    applications that perform seamlessly across all platforms.</p>
-            </div>
-            <div>
-                <h3 class="text-xl font-medium text-gray-700">Software Development</h3>
-                <p class="mt-2 text-gray-600">Need custom software? We develop tailored solutions to streamline your
-                    operations and enhance productivity.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-12 max-w-3xl mx-auto px-4 bg-gray-100">
-        <h2 class="text-3xl font-semibold text-gray-800">Portfolio</h2>
-        <p class="mt-4 text-gray-600">Explore some of our recent projects:</p>
-        <ul class="mt-4 list-disc list-inside text-gray-600">
-            <li><strong>Maintenance Tasks:</strong> A Maintenance Tasks tracking Android app with Calendar integration
-                and Notification reminders for overdue and coming tasks.</li>
-            <li><strong><a href="https://movies.deltasw.eu/" class="text-blue-600 hover:underline">Movies Watch
-                        List</a>:</strong> A web app to keep a watchlist of movies.</li>
         </ul>
-        <p class="mt-4 text-gray-600">(Contact us for more details or to see live demos!)</p>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-12 max-w-3xl mx-auto px-4">
-        <h2 class="text-3xl font-semibold text-gray-800">Contact Us</h2>
-        <p class="mt-4 text-gray-600">Ready to start your next project? Reach out to us!</p>
-        <div class="mt-4 space-y-2 text-gray-600">
-            <p>Email: <a href="mailto:info@deltasw.eu" class="text-blue-600 hover:underline">info@deltasw.eu</a></p>
-            <p>Phone: <span class="text-gray-600">+30 26911 20865</span></p>
-            <p>Location: <span class="text-gray-600">Patra, Greece</span></p>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="w-100 overflow-hidden bg-gray-100" id="top">
+
+      <div class="container position-relative">
+        <div class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover" data-aos="fade-left"
+          style="background-image: url(img/mac.jpg);">
+
         </div>
-    </section>
+        <div class="row">
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center py-4">
-        <p>© 2025 DeltaSW. All rights reserved.</p>
-    </footer>
+          <div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right">
+            <h1 class="display-1 fw-bold mt-5">Welcome to DeltaSW</h1>
+            <p class="lead">At DeltaSW, we specialize in crafting innovative Android applications, dynamic web
+              solutions, and custom software
+              tailored to your needs. Let’s bring your ideas to life with cutting-edge technology and expertise.</p>
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="py-vh-5 w-100 overflow-hidden" id="services">
+      <div class="container">
+        <div class="row d-flex justify-content-end">
+          <div class="col-lg-8" data-aos="fade-down">
+            <h2 class="display-6">Our Services</h2>
+          </div>
+        </div>
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <span class="h5 fw-lighter">01.</span>
+            <h3 class="py-5 border-top border-dark">Android App Development</h3>
+            <p>We create powerful, intuitive mobile apps for Android devices, designed to engage users and meet your
+              business goals.</p>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4 py-vh-4 pb-0" data-aos="fade-up" data-aos-delay="400">
+            <span class="h5 fw-lighter">02.</span>
+            <h3 class="py-5 border-top border-dark">Web Application Development</h3>
+            <p>From sleek front-end designs to robust back-end systems, we build web applications that perform
+              seamlessly across all
+              platforms.</p>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4 py-vh-6 pb-0" data-aos="fade-up" data-aos-delay="600">
+            <span class="h5 fw-lighter">03.</span>
+            <h3 class="py-5 border-top border-dark">Software Development</h3>
+            <p>Need custom software? We develop tailored solutions to streamline your operations and enhance
+              productivity.</p>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="aboutus">
+      <div class="container">
+
+        <div class="row d-flex justify-content-between align-items-center">
+          <div class="col-lg-6">
+            <div class="row gx-5 d-flex">
+              <div class="col-md-11">
+                <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end" data-aos="fade-right"
+                  style="background-image: url(img/webp/people15.webp);--bs-aspect-ratio: 50%;">
+                </div>
+              </div>
+              <div class="col-md-5 offset-md-1">
+                <div class="shadow ratio ratio-1x1 rounded bg-cover mt-5 bp-center float-end" data-aos="fade-up"
+                  style="background-image: url(img/webp/interior42.webp);">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="col-12 shadow ratio rounded bg-cover mt-5 bp-center" data-aos="fade-left"
+                  style="background-image: url(img/webp/people4.webp);--bs-aspect-ratio: 150%;">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h3 class="py-5 border-top border-dark" data-aos="fade-left">DeltaSW is a passionate team of developers and
+              designers.</h3>
+            <p data-aos="fade-left" data-aos-delay="200">We are dedicated to delivering high-quality software solutions.
+              With years of experience in the industry, we pride ourselves on
+              creating reliable, scalable, and user-friendly products that empower businesses and individuals alike.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="py-vh-5 w-100 overflow-hidden" id="portfolio">
+      <div class="container">
+        <div class="row d-flex justify-content-between align-items-center">
+          <div class="col-lg-5">
+            <h3 class="py-5 border-top border-dark" data-aos="fade-right">Our Portfolio</h3>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="display-6 mb-5" data-aos="fade-down">Explore some of our recent projects</h2>
+              </div>
+              <div class="col-lg-6" data-aos="fade-up">
+                <div class="display-6 fw-bold py-4">Maintenance Tasks</div>
+                <p class="text-black-50">A Maintenance Tasks tracking Android app with Calendar integration and
+                  Notification reminders for overdue and coming
+                  tasks.</p>
+              </div>
+              <div class="col-lg-6" data-aos="fade-up">
+                <div class="display-6 fw-bold py-4">Movies Watch List</div>
+                <p class="text-black-50">A <a href="https://movies.deltasw.eu/">web app</a> to keep a watchlist of
+                  movies.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="bg-light w-100 overflow-hidden" id="contact-us">
+      <div class="container py-vh-6">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+            <img src="img/logo.svg" width="32" height="32" alt="DeltaSW Logo">
+            <address class="text-secondary mt-3">
+              <strong>DeltaSW</strong><br>
+              Patra, Greece<br>
+              Phone: <a href="tel:+302691120865">+30 26911 20865</a><br>
+              Email: <a href="mailto:info@deltasw.eu">info@deltasw.eu</a><br>
+            </address>
+          </div>
+          <div class="col-12 col-lg-10 col-xl-8 text-center">
+            <h2 class="display-6">Contact Us</h2>
+            <p class="lead">Ready to start your next project? Reach out to us!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container text-center py-3 small">
+      <p>© 2025 DeltaSW. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800, // values from 0 to 3000, with step 50ms
+    });
+  </script>
+
+  <script>
+    let scrollpos = window.scrollY
+    const header = document.querySelector(".navbar")
+    const header_height = header.offsetHeight
+
+    const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
+    const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
+
+    window.addEventListener('scroll', function () {
+      scrollpos = window.scrollY;
+
+      if (scrollpos >= header_height) { add_class_on_scroll() }
+      else { remove_class_on_scroll() }
+
+      console.log(scrollpos)
+    })
+  </script>
+
 </body>
 
 </html>
