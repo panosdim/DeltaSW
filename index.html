@@ -1,280 +1,347 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="h-100" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <meta name="description" content="Building Tomorrow's Solutions Today" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>DeltaSW - Building Tomorrow's Solutions Today</title>
+    <link rel="stylesheet" href="css/theme.min.css" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-  <meta name="description" content="Building Tomorrow's Solutions Today">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
-  <meta name="HandheldFriendly" content="true">
-  <title>DeltaSW - Building Tomorrow's Solutions Today</title>
-  <link rel="stylesheet" href="css/theme.min.css">
+    <style>
+      /* inter-300 - latin */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: local(""), url("./fonts/inter-v12-latin-300.woff2") format("woff2"),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("./fonts/inter-v12-latin-300.woff") format("woff");
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
 
-  <style>
-    /* inter-300 - latin */
-    @font-face {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 300;
-      font-display: swap;
-      src: local(''),
-        url('./fonts/inter-v12-latin-300.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('./fonts/inter-v12-latin-300.woff') format('woff');
-      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: local(""), url("./fonts/inter-v12-latin-500.woff2") format("woff2"),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("./fonts/inter-v12-latin-500.woff") format("woff");
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
 
-    @font-face {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 500;
-      font-display: swap;
-      src: local(''),
-        url('./fonts/inter-v12-latin-500.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('./fonts/inter-v12-latin-500.woff') format('woff');
-      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: local(""), url("./fonts/inter-v12-latin-700.woff2") format("woff2"),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("./fonts/inter-v12-latin-700.woff") format("woff");
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
+    </style>
+  </head>
 
-    @font-face {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 700;
-      font-display: swap;
-      src: local(''),
-        url('./fonts/inter-v12-latin-700.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('./fonts/inter-v12-latin-700.woff') format('woff');
-      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    }
-  </style>
-
-</head>
-
-<body data-bs-spy="scroll" data-bs-target="#navScroll">
-
-  <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
-    <div class="container">
-      <a class="navbar-brand pe-4 fs-4" href="/">
-        <img src="img/logo.svg" width="32" height="32" alt="DeltaSW Logo">
-        <span class="ms-1 fw-bolder">DeltaSW</span>
-      </a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#services" aria-label="Brings you to the frontpage">
-              Services
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#aboutus">
-              About us
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">
-              Portfolio
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact-us">
-              Contact Us
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-    </div>
-  </nav>
-
-  <main>
-    <div class="w-100 overflow-hidden bg-gray-100" id="top">
-
-      <div class="container position-relative">
-        <div class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover" data-aos="fade-left"
-          style="background-image: url(img/mac.jpg);">
-
-        </div>
-        <div class="row">
-
-          <div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right">
-            <h1 class="display-1 fw-bold mt-5">Welcome to DeltaSW</h1>
-            <p class="lead">At DeltaSW, we specialize in crafting innovative Android applications, dynamic web
-              solutions, and custom software
-              tailored to your needs. Let’s bring your ideas to life with cutting-edge technology and expertise.</p>
-          </div>
-
-
-
-        </div>
-      </div>
-
-    </div>
-
-    <div class="py-vh-5 w-100 overflow-hidden" id="services">
+  <body data-bs-spy="scroll" data-bs-target="#navScroll">
+    <nav
+      id="navScroll"
+      class="navbar navbar-expand-lg navbar-light fixed-top"
+      tabindex="0"
+    >
       <div class="container">
-        <div class="row d-flex justify-content-end">
-          <div class="col-lg-8" data-aos="fade-down">
-            <h2 class="display-6">Our Services</h2>
-          </div>
+        <a class="navbar-brand pe-4 fs-4" href="/">
+          <img src="img/logo.svg" width="32" height="32" alt="DeltaSW Logo" />
+          <span class="ms-1 fw-bolder">DeltaSW</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#services"
+                aria-label="Brings you to the frontpage"
+              >
+                Services
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutus"> About us </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio"> Portfolio </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-us"> Contact Us </a>
+            </li>
+          </ul>
         </div>
-        <div class="row d-flex align-items-center">
-          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <span class="h5 fw-lighter">01.</span>
-            <h3 class="py-5 border-top border-dark">Android App Development</h3>
-            <p>We create powerful, intuitive mobile apps for Android devices, designed to engage users and meet your
-              business goals.</p>
-            </a>
-          </div>
-
-          <div class="col-md-6 col-lg-4 py-vh-4 pb-0" data-aos="fade-up" data-aos-delay="400">
-            <span class="h5 fw-lighter">02.</span>
-            <h3 class="py-5 border-top border-dark">Web Application Development</h3>
-            <p>From sleek front-end designs to robust back-end systems, we build web applications that perform
-              seamlessly across all
-              platforms.</p>
-            </a>
-          </div>
-
-          <div class="col-md-6 col-lg-4 py-vh-6 pb-0" data-aos="fade-up" data-aos-delay="600">
-            <span class="h5 fw-lighter">03.</span>
-            <h3 class="py-5 border-top border-dark">Software Development</h3>
-            <p>Need custom software? We develop tailored solutions to streamline your operations and enhance
-              productivity.</p>
-            </a>
-          </div>
-        </div>
-
       </div>
-    </div>
+    </nav>
 
-    <div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="aboutus">
-      <div class="container">
+    <main>
+      <div class="w-100 overflow-hidden bg-gray-100" id="top">
+        <div class="container position-relative">
+          <div
+            class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover"
+            data-aos="fade-left"
+            style="background-image: url(img/mac.jpg)"
+          ></div>
+          <div class="row">
+            <div
+              class="col-lg-7 py-vh-6 position-relative"
+              data-aos="fade-right"
+            >
+              <h1 class="display-1 fw-bold mt-5">Welcome to DeltaSW</h1>
+              <p class="lead">
+                At DeltaSW, we specialize in crafting innovative Android
+                applications, dynamic web solutions, and custom software
+                tailored to your needs. Let’s bring your ideas to life with
+                cutting-edge technology and expertise.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <div class="row d-flex justify-content-between align-items-center">
-          <div class="col-lg-6">
-            <div class="row gx-5 d-flex">
-              <div class="col-md-11">
-                <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end" data-aos="fade-right"
-                  style="background-image: url(img/webp/people15.webp);--bs-aspect-ratio: 50%;">
+      <div class="py-vh-5 w-100 overflow-hidden" id="services">
+        <div class="container">
+          <div class="row d-flex justify-content-end">
+            <div class="col-lg-8" data-aos="fade-down">
+              <h2 class="display-6">Our Services</h2>
+            </div>
+          </div>
+          <div class="row d-flex align-items-center">
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <span class="h5 fw-lighter">01.</span>
+              <h3 class="py-5 border-top border-dark">
+                Android App Development
+              </h3>
+              <p>
+                We create powerful, intuitive mobile apps for Android devices,
+                designed to engage users and meet your business goals.
+              </p>
+            </div>
+            <div
+              class="col-md-6 col-lg-4 py-vh-4 pb-0"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <span class="h5 fw-lighter">02.</span>
+              <h3 class="py-5 border-top border-dark">
+                Web Application Development
+              </h3>
+              <p>
+                From sleek front-end designs to robust back-end systems, we
+                build web applications that perform seamlessly across all
+                platforms.
+              </p>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-4 py-vh-6 pb-0"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <span class="h5 fw-lighter">03.</span>
+              <h3 class="py-5 border-top border-dark">Software Development</h3>
+              <p>
+                Need custom software? We develop tailored solutions to
+                streamline your operations and enhance productivity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="aboutus">
+        <div class="container">
+          <div class="row d-flex justify-content-between align-items-center">
+            <div class="col-lg-6">
+              <div class="row gx-5 d-flex">
+                <div class="col-md-11">
+                  <div
+                    class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end"
+                    data-aos="fade-right"
+                    style="
+                      background-image: url(img/webp/people15.webp);
+                      --bs-aspect-ratio: 50%;
+                    "
+                  ></div>
+                </div>
+                <div class="col-md-5 offset-md-1">
+                  <div
+                    class="shadow ratio ratio-1x1 rounded bg-cover mt-5 bp-center float-end"
+                    data-aos="fade-up"
+                    style="background-image: url(img/webp/interior42.webp)"
+                  ></div>
+                </div>
+                <div class="col-md-6">
+                  <div
+                    class="col-12 shadow ratio rounded bg-cover mt-5 bp-center"
+                    data-aos="fade-left"
+                    style="
+                      background-image: url(img/webp/people4.webp);
+                      --bs-aspect-ratio: 150%;
+                    "
+                  ></div>
                 </div>
               </div>
-              <div class="col-md-5 offset-md-1">
-                <div class="shadow ratio ratio-1x1 rounded bg-cover mt-5 bp-center float-end" data-aos="fade-up"
-                  style="background-image: url(img/webp/interior42.webp);">
+            </div>
+            <div class="col-lg-4">
+              <h3 class="py-5 border-top border-dark" data-aos="fade-left">
+                DeltaSW is a passionate team of developers and designers.
+              </h3>
+              <p data-aos="fade-left" data-aos-delay="200">
+                We are dedicated to delivering high-quality software solutions.
+                With years of experience in the industry, we pride ourselves on
+                creating reliable, scalable, and user-friendly products that
+                empower businesses and individuals alike.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-vh-5 w-100 overflow-hidden" id="portfolio">
+        <div class="container">
+          <div class="row d-flex justify-content-between align-items-center">
+            <div class="col-lg-5">
+              <h3 class="py-5 border-top border-dark" data-aos="fade-right">
+                Our Portfolio
+              </h3>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-12">
+                  <h2 class="display-6 mb-5" data-aos="fade-down">
+                    Explore some of our recent projects
+                  </h2>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="col-12 shadow ratio rounded bg-cover mt-5 bp-center" data-aos="fade-left"
-                  style="background-image: url(img/webp/people4.webp);--bs-aspect-ratio: 150%;">
+                <div class="col-lg-6" data-aos="fade-up">
+                  <div class="display-6 fw-bold py-4">Maintenance Tasks</div>
+                  <p class="text-black-50">
+                    A Maintenance Tasks tracking Android app with Calendar
+                    integration and Notification reminders for overdue and
+                    coming tasks.
+                  </p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up">
+                  <div class="display-6 fw-bold py-4">Movies Watch List</div>
+                  <p class="text-black-50">
+                    A <a href="https://movies.deltasw.eu/">web app</a> to keep a
+                    watchlist of movies.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <h3 class="py-5 border-top border-dark" data-aos="fade-left">DeltaSW is a passionate team of developers and
-              designers.</h3>
-            <p data-aos="fade-left" data-aos-delay="200">We are dedicated to delivering high-quality software solutions.
-              With years of experience in the industry, we pride ourselves on
-              creating reliable, scalable, and user-friendly products that empower businesses and individuals alike.
-            </p>
-          </div>
         </div>
-
       </div>
-    </div>
 
-    <div class="py-vh-5 w-100 overflow-hidden" id="portfolio">
-      <div class="container">
-        <div class="row d-flex justify-content-between align-items-center">
-          <div class="col-lg-5">
-            <h3 class="py-5 border-top border-dark" data-aos="fade-right">Our Portfolio</h3>
-          </div>
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-12">
-                <h2 class="display-6 mb-5" data-aos="fade-down">Explore some of our recent projects</h2>
-              </div>
-              <div class="col-lg-6" data-aos="fade-up">
-                <div class="display-6 fw-bold py-4">Maintenance Tasks</div>
-                <p class="text-black-50">A Maintenance Tasks tracking Android app with Calendar integration and
-                  Notification reminders for overdue and coming
-                  tasks.</p>
-              </div>
-              <div class="col-lg-6" data-aos="fade-up">
-                <div class="display-6 fw-bold py-4">Movies Watch List</div>
-                <p class="text-black-50">A <a href="https://movies.deltasw.eu/">web app</a> to keep a watchlist of
-                  movies.</p>
-              </div>
+      <div class="bg-light w-100 overflow-hidden" id="contact-us">
+        <div class="container py-vh-6">
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+              <img
+                src="img/logo.svg"
+                width="32"
+                height="32"
+                alt="DeltaSW Logo"
+              />
+              <address class="text-secondary mt-3">
+                <strong>DeltaSW</strong><br />
+                Patra, Greece<br />
+                Phone: <a href="tel:+302691120865">+30 26911 20865</a><br />
+                Email: <a href="mailto:info@deltasw.eu">info@deltasw.eu</a
+                ><br />
+              </address>
+            </div>
+            <div class="col-12 col-lg-10 col-xl-8 text-center">
+              <h2 class="display-6">Contact Us</h2>
+              <p class="lead">
+                Ready to start your next project? Reach out to us!
+              </p>
             </div>
           </div>
         </div>
-
       </div>
-    </div>
+    </main>
 
-    <div class="bg-light w-100 overflow-hidden" id="contact-us">
-      <div class="container py-vh-6">
-        <div class="row d-flex justify-content-center">
-          <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
-            <img src="img/logo.svg" width="32" height="32" alt="DeltaSW Logo">
-            <address class="text-secondary mt-3">
-              <strong>DeltaSW</strong><br>
-              Patra, Greece<br>
-              Phone: <a href="tel:+302691120865">+30 26911 20865</a><br>
-              Email: <a href="mailto:info@deltasw.eu">info@deltasw.eu</a><br>
-            </address>
-          </div>
-          <div class="col-12 col-lg-10 col-xl-8 text-center">
-            <h2 class="display-6">Contact Us</h2>
-            <p class="lead">Ready to start your next project? Reach out to us!</p>
-          </div>
-        </div>
+    <footer>
+      <div class="container text-center py-3 small">
+        <p>© 2025 DeltaSW. All rights reserved.</p>
       </div>
-    </div>
-  </main>
+    </footer>
 
-  <footer>
-    <div class="container text-center py-3 small">
-      <p>© 2025 DeltaSW. All rights reserved.</p>
-    </div>
-  </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // values from 0 to 3000, with step 50ms
+      });
+    </script>
 
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800, // values from 0 to 3000, with step 50ms
-    });
-  </script>
+    <script>
+      let scrollpos = window.scrollY;
+      const header = document.querySelector(".navbar");
+      const header_height = header.offsetHeight;
 
-  <script>
-    let scrollpos = window.scrollY
-    const header = document.querySelector(".navbar")
-    const header_height = header.offsetHeight
+      const add_class_on_scroll = () =>
+        header.classList.add("scrolled", "shadow-sm");
+      const remove_class_on_scroll = () =>
+        header.classList.remove("scrolled", "shadow-sm");
 
-    const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
-    const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
+      window.addEventListener("scroll", function () {
+        scrollpos = window.scrollY;
 
-    window.addEventListener('scroll', function () {
-      scrollpos = window.scrollY;
+        if (scrollpos >= header_height) {
+          add_class_on_scroll();
+        } else {
+          remove_class_on_scroll();
+        }
 
-      if (scrollpos >= header_height) { add_class_on_scroll() }
-      else { remove_class_on_scroll() }
-
-      console.log(scrollpos)
-    })
-  </script>
-
-</body>
-
+        console.log(scrollpos);
+      });
+    </script>
+  </body>
 </html>
